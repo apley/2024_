@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../大專css/research_css.css">
+</head>
+<body>
+    <!-- 下面是header---------------------------------------------------------------------------- -->
+    <!-- 上層導航欄 -->
+    <nav class="navbar bg-light justify-between" style="border-bottom:gray solid 1px;">
+            <a href="#" class="navbar-brand ">
+                <img style="width: 150px; margin-left: 40px;" src="../img/logo.png" alt="">
+            </a>
+            <div class="justify-between">
+                <!-- 會員頭像 -->
+                <a href="#" style="margin-right: 20px;text-decoration: none; color: inherit;"><img
+                        src="https://placehold.co/38x38" alt="">會員</a>
+                <!-- 會員頭像 -->
+                <a href="#"
+                    style="margin-right: 20px;text-decoration: none; color: inherit;">客服</a>
+            </div>
+    </nav>
+    <!-- 上層導航欄結束 -->
+    
+    <!-- 下面是crunchbar的---------------------------------------------------------------------------- -->
+    <div class="crunchbar row gx-0">
+        <div class="crunchbar-left col-xl-1 gx-0">
+            <div class="col-1 gx-0"></div>
+            <div class="col-11 gx-0">
+                首頁 > 所有食譜
+            </div>
+        </div>
+        <div class="crunchbar-middle col-xl-8 col-md-12 row gx-0">
+            <ul id="mybar" class="cruchbar-middle-ul col-5 gx-0" >
+                <li class="col-4 gx-0"><a href="">所有食譜</a></li>
+                <li class="col-4 gx-0"><a href="">我的食譜</a></li>
+                <li class="col-4 gx-0"><a href="">我的頁面</a></li>
+            </ul>
+        </div>
+        <div class="crunchbar-right col-xl-2 col-md-12"></div>
+    </div>
+    <!-- 內容 -->
+    <div class="container">
+        <div class="row rounded" style="background-color: rgb(212, 247, 212);">
+            <!-- 搜尋選單 -->
+            <div class="d-flex row gx-3 gy-3 mt-4" id="search">
+                <!--篩選欄 -->
+                <div class="col-md-2 col-sm-6">
+                    <div class="border rounded">
+                        <img src="https://lkk.azureedge.net/images/recipe-icon1.png" alt=""
+                            class="list_img_size rounded mx-auto d-block">
+                        <p style="text-align: center;">烹飪時間</p>
+                        <div class="col-md-12">
+                            <div class="btn-group w-100" id="search_0">
+                                <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-display="static">
+                                    所有選項
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
+                                    style="overflow:scroll; max-height: 200px;">
+                                    <li><button class="dropdown-item" type="button">所有</button></li>
+                                    <li><button class="dropdown-item" type="button">簡易食譜</button></li>
+                                    <li><button class="dropdown-item" type="button">少於１５分鐘</button></li>
+                                    <li><button class="dropdown-item" type="button">少於３０分鐘</button></li>
+                                    <li><button class="dropdown-item" type="button">少於６０分鐘</button></li>
+                                    <li><button class="dropdown-item" type="button">超過６０分鐘</button></li>
+                                    <li><button class="dropdown-item" type="button">快速食譜</button></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 篩選欄 -->
+                <!--篩選欄 -->
+                <div class="col-md-2 col-sm-6">
+                    <div class="border rounded">
+                        <img src="https://lkk.azureedge.net/images/recipe-icon2.png" alt=""
+                            class="list_img_size rounded mx-auto d-block">
+                        <p style="text-align: center;">調味料</p>
+                        <div class="col-md-12">
+                            <div class="btn-group w-100" id="search_1">
+                                <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-display="static">
+                                    所有選項
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
+                                    style="overflow:scroll; max-height: 200px;">
+                                    <li><button class="dropdown-item" type="button">所有</button></li>
+                                    <li><button class="dropdown-item" type="button">薑</button></li>
+                                    <li><button class="dropdown-item" type="button">蔥</button></li>
+                                    <li><button class="dropdown-item" type="button">蠔油</button></li>
+                                    <li><button class="dropdown-item" type="button">濃湯</button></li>
+                                    <li><button class="dropdown-item" type="button">醬油</button></li>
+                                    <li><button class="dropdown-item" type="button">即食美饌</button></li>
+                                    <li><button class="dropdown-item" type="button">烤肉醬</button></li>
+                                    <li><button class="dropdown-item" type="button">烹調用料及蘸料</button></li>
+                                    <li><button class="dropdown-item" type="button">海鮮醬</button></li>
+                                    <li><button class="dropdown-item" type="button">麻辣火鍋上湯</button></li>
+                                    <li><button class="dropdown-item" type="button">方便醬料包</button></li>
+                                    <li><button class="dropdown-item" type="button">蒜蓉</button></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 篩選欄 -->
+                <!--篩選欄 -->
+                <div class="col-md-2 col-sm-6">
+                    <div class="border rounded">
+                        <img src="https://lkk.azureedge.net/images/recipe-icon3.png" alt=""
+                            class="list_img_size rounded mx-auto d-block">
+                        <p style="text-align: center;">材料</p>
+                        <div class="col-md-12">
+                            <div class="btn-group w-100" id="search_2">
+                                <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-display="static">
+                                    所有選項
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
+                                    style="overflow:scroll; max-height: 200px;">
+                                    <li><button class="dropdown-item" type="button">所有</button></li>
+                                    <li><button class="dropdown-item" type="button">牛肉</button></li>
+                                    <li><button class="dropdown-item" type="button">雞</button></li>
+                                    <li><button class="dropdown-item" type="button">雞蛋</button></li>
+                                    <li><button class="dropdown-item" type="button">羊</button></li>
+                                    <li><button class="dropdown-item" type="button">豬</button></li>
+                                    <li><button class="dropdown-item" type="button">年糕</button></li>
+                                    <li><button class="dropdown-item" type="button">飯/麵</button></li>
+                                    <li><button class="dropdown-item" type="button">海鮮</button></li>
+                                    <li><button class="dropdown-item" type="button">豆腐</button></li>
+                                    <li><button class="dropdown-item" type="button">火雞</button></li>
+                                    <li><button class="dropdown-item" type="button">蔬菜</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 篩選欄 -->
+                <!--篩選欄 -->
+                <div class="col-md-2 col-sm-6">
+                    <div class="border rounded">
+                        <img src="https://lkk.azureedge.net/images/recipe-icon4.png" alt=""
+                            class="list_img_size rounded mx-auto d-block">
+                        <p style="text-align: center;">餐類</p>
+                        <div class="col-md-12">
+                            <div class="btn-group w-100" id="search_3">
+                                <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-display="static">
+                                    所有選項
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
+                                    style="overflow:scroll; max-height: 200px;">
+                                    <li><button class="dropdown-item" type="button">所有</button></li>
+                                    <li><button class="dropdown-item" type="button">小食</button></li>
+                                    <li><button class="dropdown-item" type="button">甜品</button></li>
+                                    <li><button class="dropdown-item" type="button">晚餐</button></li>
+                                    <li><button class="dropdown-item" type="button">午餐</button></li>
+                                    <li><button class="dropdown-item" type="button">沙律</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 篩選欄 -->
+                <!--篩選欄 -->
+                <div class="col-md-2 col-sm-6">
+                    <div class="border rounded">
+                        <img src="https://lkk.azureedge.net/images/recipe-icon5.png" alt=""
+                            class="list_img_size rounded mx-auto d-block">
+                        <p style="text-align: center;">膳食</p>
+                        <div class="col-md-12">
+                            <div class="btn-group w-100" id="search_4">
+                                <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-display="static">
+                                    所有選項
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
+                                    style="overflow:scroll; max-height: 200px;">
+                                    <li><button class="dropdown-item" type="button">所有</button></li>
+                                    <li><button class="dropdown-item" type="button">健康食譜</button></li>
+                                    <li><button class="dropdown-item" type="button">素食食譜</button></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 篩選欄 -->
+                <!--篩選欄 -->
+                <div class="col-md-2 col-sm-6">
+                    <div class="border rounded">
+                        <img src="https://lkk.azureedge.net/images/recipe-icon6.png" alt=""
+                            class="list_img_size rounded mx-auto d-block">
+                        <p style="text-align: center;">菜式</p>
+                        <div class="col-md-12">
+                            <div class="btn-group w-100" id="search_5">
+                                <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-display="static">
+                                    所有選項
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
+                                    style="overflow:scroll; max-height: 200px;">
+                                    <li><button class="dropdown-item" type="button">所有</button></li>
+                                    <li><button class="dropdown-item" type="button">中式食譜</button></li>
+                                    <li><button class="dropdown-item" type="button">亞洲美食</button></li>
+                                    <li><button class="dropdown-item" type="button">無國界料理</button></li>
+                                    <li><button class="dropdown-item" type="button">一匙入味 家常好菜</button></li>
+                                    <li><button class="dropdown-item" type="button">年菜食譜</button></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 篩選欄 -->
+
+            </div>
+            <!-- 搜尋選單 -->
+            <!-- 第二個搜尋列 -->
+            <div class="d-flex row mt-4">
+                <div class="col-2"></div>
+                <div class="col-8" style="text-align: center;">search bar</div>
+                    <button style="background-color: rgba(97, 35, 6, 0.941);color: white;" class="rounded text-decoration-none col-2 " id="clear_all">
+                        <img src="https://lkk.azureedge.net/images/icon-trash-white.png" alt="">
+                        清除所有
+                    </button>
+            </div>
+            <!-- 第二個搜尋列 -->
+        </div>
+        <!-- 搜尋結果 -->
+        <div class="container">
+            <!-- 排列 -->
+        <div class="row">
+            <div class="col-10"></div>
+            <div class="btn-group col-2 mt-4" id="search_5">
+                <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-display="static">
+                    排序依
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
+                    style="overflow:scroll; max-height: 200px;">
+                    <li><button class="dropdown-item" type="button">所有</button></li>
+                    <li><button class="dropdown-item" type="button">中式食譜</button></li>
+                    <li><button class="dropdown-item" type="button">亞洲美食</button></li>
+                    <li><button class="dropdown-item" type="button">無國界料理</button></li>
+                    <li><button class="dropdown-item" type="button">一匙入味 家常好菜</button></li>
+                    <li><button class="dropdown-item" type="button">年菜食譜</button></li>
+                </ul>
+            </div>
+        </div>
+            <!-- 排列 -->
+        <!-- 結果 -->
+        <div class="row mt-4 border">
+            <img class="col-4 mt-4" alt="" src="./img/logo.png" />
+            <div class="col-8 mt-4">
+                <div class="d-flex mt-4">
+                    <img alt="" src="./img/user.svg" />
+                    <div class="div2">官方帳號</div>
+                </div>
+
+                <div class="div3 mt-4">宮保雞丁蓋飯</div>
+                <div class="div4 mt-4">
+                    宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯
+                </div>
+                <div class="d-flex mt-4 justify-content-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
+                    <div>132</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
+                    <div>1032</div>
+                </div>
+            </div>
+        </div>
+        <!-- 結果 -->
+        <!-- 結果 -->
+        <div class="row mt-4 border">
+            <img class="col-4 mt-4" alt="" src="./img/logo.png" />
+            <div class="col-8 mt-4">
+                <div class="d-flex mt-4">
+                    <img alt="" src="./img/user.svg" />
+                    <div class="div2">官方帳號</div>
+                </div>
+
+                <div class="div3 mt-4">宮保雞丁蓋飯</div>
+                <div class="div4 mt-4">
+                    宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯
+                </div>
+                <div class="d-flex mt-4 justify-content-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
+                    <div>132</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
+                    <div>1032</div>
+                </div>
+            </div>
+        </div>
+        <!-- 結果 -->
+        <!-- 結果 -->
+        <div class="row mt-4 border">
+            <img class="col-4 mt-4" alt="" src="./img/logo.png" />
+            <div class="col-8 mt-4">
+                <div class="d-flex mt-4">
+                    <img alt="" src="./img/user.svg" />
+                    <div class="div2">官方帳號</div>
+                </div>
+
+                <div class="div3 mt-4">宮保雞丁蓋飯</div>
+                <div class="div4 mt-4">
+                    宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯
+                </div>
+                <div class="d-flex mt-4 justify-content-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
+                    <div>132</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
+                    <div>1032</div>
+                </div>
+            </div>
+        </div>
+        <!-- 結果 -->
+        <!-- 結果 -->
+        <div class="row mt-4 border">
+            <img class="col-4 mt-4" alt="" src="./img/logo.png" />
+            <div class="col-8 mt-4">
+                <div class="d-flex mt-4">
+                    <img alt="" src="./img/user.svg" />
+                    <div class="div2">官方帳號</div>
+                </div>
+
+                <div class="div3 mt-4">宮保雞丁蓋飯</div>
+                <div class="div4 mt-4">
+                    宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯宮保雞丁蓋飯
+                </div>
+                <div class="d-flex mt-4 justify-content-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
+                    <div>132</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
+                    <div>1032</div>
+                </div>
+            </div>
+        </div>
+        <!-- 結果 -->
+       
+        </div>
+    </div>
+    <!-- 搜尋結果end -->
+    </div>
+    <!-- 內容 -->
+     <!-- 下面是footer的---------------------------------------------------------------------------- -->
+     <footer class="row gx-0">
+        <div class="footer-left col-xl-4 row gx-0">
+            <div class="footer-left-logo gx-0">
+                關於我們
+            </div>
+        </div>
+        <div class="footer-right col-xl-8 gx-0">
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> 
+    <script>
+        $("#search").on("click", "button", function () {
+            //保存當前的按鈕資料
+            var temp = this;
+            $("#search").find("div>button").each(function (index) {
+                if (this === temp) { // 判斷是否是點擊的按钮
+                    console.log(index);
+                    // 移除之前绑定的點擊事件
+                    $("li>button").off("click").on("click", function () {
+                        console.log($(this).text());
+                        $(`#search_${index} >button:first`).text($(this).text());
+                    });
+                }
+            });
+        });
+        
+        //初始化篩選器(也可以在清除紐上加一個a標籤live會自動初始化)
+        $("#clear_all").on("click",function(){
+            for(var i=0;i<6;i++){
+                $(`#search_${i}>button`).text("所有選項")
+            } 
+        })
+
+        $("#mybar").addClass("font-size:10px")
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,596 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "清炒蔬菜",
+      "author": "張小敏",
+      "description": "清炒蔬菜是一道經典的中式烹飪菜式，以新鮮多彩的蔬菜為主料，經過快速翻炒而成。這道菜色澤鮮艷，口感清脆，保留了蔬菜的原汁原味，營養豐富且易消化。新鮮的青菜、胡蘿蔔、甜椒等蔬菜，經過精心切片或切絲後，與少量的調味料一同上鍋，以高溫快速翻炒，使蔬菜保持脆嫩的口感和鮮豔的色澤。在烹飪過程中，蔬菜的營養成分得以完整保留，口感清爽。",
+      
+      "ingredients": [
+        { "name": "青菜", "quantity": 300, "unit": "克" },
+        { "name": "紅椒", "quantity": 1, "unit": "個" },
+        { "name": "黃椒", "quantity": 1, "unit": "個" },
+        { "name": "胡蘿蔔", "quantity": 1, "unit": "根" },
+        { "name": "鹽", "quantity": 5, "unit": "克" },
+        { "name": "胡椒", "quantity": 3, "unit": "克" },
+        { "name": "橄欖油", "quantity": 20, "unit": "毫升" }
+      ],
+      "instructions": [
+        "將青菜、紅椒、黃椒和胡蘿蔔洗淨切片備用。",
+        "熱鍋後倒入橄欖油，爆香胡蘿蔔片。",
+        "依次加入青菜、紅椒和黃椒，快速翻炒。",
+        "加入鹽和胡椒調味，翻炒均勻即可。"
+      ],
+      "servings": 2,
+      "prep_time": 10,
+      "cook_time": 5,
+      "total_time": 10,
+      "image": "url_to_image.jpg",
+      "views": 1000,
+      "clicks": 500
+
+    },
+    {
+      "id": 2,
+      "title": "香煎三文魚",
+      "author": "李小龍",
+      "description": "香煎三文魚是一道極具風味的美食，它以新鮮的三文魚作為主料，經過簡單的調味和煎烤而成。這道菜肴外皮金黃酥脆，內裡肉質鮮嫩多汁，絕對是海鮮愛好者的最愛。三文魚本身就富含優質的蛋白質和Omega-3脂肪酸，營養豐富，有助於促進心血管健康和提高免疫力。香煎三文魚不僅口感絕佳，而且烹飪過程簡單快捷，適合各種場合的用餐，無論是家庭聚餐還是浪漫晚餐都非常適合。無論是海鮮愛好者還是想要嘗試新口味的人都值得一試這道美味的香煎三文魚。",
+      "ingredients": [
+        { "name": "三文魚", "quantity": 400, "unit": "克" },
+        { "name": "橄欖油", "quantity": 30, "unit": "毫升" },
+        { "name": "鹽", "quantity": 5, "unit": "克" },
+        { "name": "黑胡椒", "quantity": 3, "unit": "克" },
+        { "name": "檸檬", "quantity": 1, "unit": "個" }
+      ],
+      "instructions": [
+        "將橄欖油加熱至中火。",
+        "在三文魚上均勻塗抹鹽和黑胡椒。",
+        "將三文魚放入煎鍋中，每面煎約3-4分鐘，直到金黃色。",
+        "擠上新鮮檸檬汁，即可食用。"
+      ],
+      "servings": 2,
+      "prep_time": 10,
+      "cook_time": 10,
+      "total_time": 20,
+      "image": "url_to_image.jpg",
+      "views": 1000,
+      "clicks": 500
+    },
+    {
+      "id": 3,
+      "title": "義式番茄麵",
+      "author": "張小青",
+      "description": "義式番茄麵是一道充滿地中海風情的美食，以新鮮的番茄、香料和義大利麵為主要食材。這道料理的麵條通常以義大利寬麵為主，搭配豐富的番茄醬，口感酸甜可口。番茄醬的製作過程中，經常加入大量的番茄、洋蔥、蒜頭和各種香草，經過悶煮和攪拌，使得番茄醬濃郁鮮美。最後，將煮熟的義大利寬麵與番茄醬混合均勻，再撒上一些新鮮的巴西里或帕瑪森芝士，增添風味。這道菜簡單美味，適合作為主菜或是素食選擇。",
+      "ingredients": [
+        { "name": "義大利麵", "quantity": 200, "unit": "克" },
+        { "name": "番茄醬", "quantity": 150, "unit": "克" },
+        { "name": "番茄", "quantity": 2, "unit": "個" },
+        { "name": "洋蔥", "quantity": 1, "unit": "個" },
+        { "name": "大蒜", "quantity": 2, "unit": "瓣" },
+        { "name": "橄欖油", "quantity": 20, "unit": "毫升" },
+        { "name": "羅勒", "quantity": "適量", "unit": "" }
+      ],
+      "instructions": [
+        "將義大利麵煮至 al dente 狀態，撈出瀝乾備用。",
+        "在平底鍋中加熱橄欖油，爆香洋蔥和大蒜。",
+        "加入番茄醬和切碎的番茄，煮至番茄熟爛。",
+        "加入煮熟的義大利麵，拌勻。",
+        "撒上羅勒葉，即可享用。"
+      ],
+      "servings": 2,
+      "prep_time": 10,
+      "cook_time": 15,
+      "total_time": 25,
+      "image": "url_to_image.jpg",
+      "views": 1000,
+      "clicks": 500
+    },
+    {
+      "id": 4,
+      "title": "檸檬雞腿",
+      "author": "王小明",
+      "description": "檸檬雞腿是一道清新美味的菜餚，以雞腿為主要食材，搭配檸檬和香料調味而成。這道料理的雞腿首先被醃製在檸檬汁、橄欖油和蜂蜜的混合物中，使其入味並增添酸甜風味。接著將調味過的雞腿放入烤箱中烤至金黃酥脆，使肉質鮮嫩多汁。在烹飪過程中，常常會灑上一些新鮮的香草，如迷迭香或百里香，增添香氣和風味。這道菜色澤誘人，口感豐富，酸甜清新，適合作為主菜或是下酒菜，無論是家庭聚餐還是節日盛宴都十分適合。",
+      "ingredients": [
+        { "name": "雞腿", "quantity": 4, "unit": "支" },
+        { "name": "檸檬", "quantity": 2, "unit": "個" },
+        { "name": "大蒜", "quantity": 4, "unit": "瓣" },
+        { "name": "橄欖油", "quantity": 30, "unit": "毫升" },
+        { "name": "鹽", "quantity": 5, "unit": "克" },
+        { "name": "黑胡椒", "quantity": 3, "unit": "克" },
+        { "name": "香菜", "quantity": "適量", "unit": "" }
+      ],
+      "instructions": [
+        "將雞腿洗净，用厨房纸擦干水分。",
+        "柠檬切片，大蒜切碎。",
+        "在雞腿上均匀地涂抹檸檬汁和大蒜。",
+        "撒上鹽和黑胡椒。",
+        "在烤盘上铺上锡纸，涂抹橄欖油。",
+        "将雞腿放在烤盘上，放入预热至200°C的烤箱中，烤约25-30分钟，或直到鸡肉熟透，表面金黄。",
+        "出炉后，撒上香菜，即可食用。"
+      ],
+      "servings": 4,
+      "prep_time": 15,
+      "cook_time": 30,
+      "total_time": 45,
+      "image": "url_to_image.jpg",
+      "views": 1000,
+      "clicks": 500
+    },
+    {
+      "id": 5,
+      "title": "素食炒麵",
+      "author": "劉小亮",
+      "description": "清淡可口的素食炒麵，營養豐富。",
+      "ingredients": [
+        { "name": "炒麵", "quantity": 300, "unit": "克" },
+        { "name": "紅椒", "quantity": 1, "unit": "個" },
+        { "name": "青椒", "quantity": 1, "unit": "個" },
+        { "name": "洋蔥", "quantity": 1, "unit": "個" },
+        { "name": "蒜", "quantity": 2, "unit": "瓣" },
+        { "name": "醬油", "quantity": 30, "unit": "毫升" },
+        { "name": "糖", "quantity": 10, "unit": "克" },
+        { "name": "鹽", "quantity": 5, "unit": "克" },
+        { "name": "橄欖油", "quantity": 20, "unit": "毫升" }
+      ],
+      "instructions": [
+        "將炒麵煮熟，撈起瀝乾。",
+        "紅椒、青椒和洋蔥切絲，大蒜切末。",
+        "熱鍋後倒入橄欖油，爆香大蒜。",
+        "加入洋蔥和彩椒炒至軟。",
+        "加入煮熟的炒麵，倒入醬油、糖和鹽，快速翻炒均勻即可。"
+      ],
+      "servings": 2,
+      "prep_time": 10,
+      "cook_time": 10,
+      "total_time": 20,
+      "image": "url_to_image.jpg",
+      "views": 1000,
+      "clicks": 500
+    },
+    {
+      "id": 6,
+      "title": "奶油蒜蓉蝦",
+      "author": "林小美",
+      "description": "香濃奶油蒜蓉蝦，鮮嫩多汁，美味無比。",
+      "ingredients": [
+        { "name": "大蝦", "quantity": 300, "unit": "克" },
+        { "name": "奶油", "quantity": 50, "unit": "克" },
+        { "name": "蒜", "quantity": 4, "unit": "瓣" },
+        { "name": "白葡萄酒", "quantity": 50, "unit": "毫升" },
+        { "name": "鹽", "quantity": 5, "unit": "克" },
+        { "name": "黑胡椒", "quantity": 3, "unit": "克" },
+        { "name": "香菜", "quantity": "適量", "unit": "" }
+      ],
+      "instructions": [
+        "大蝦去殼留尾，去腸泥，洗净後用厨房纸吸干水分。",
+        "蒜切末，香菜洗净切碎。",
+        "平底鍋加熱後倒入奶油，爆香蒜末。",
+        "放入大蝦煎至兩面金黃。",
+        "倒入白葡萄酒，加入鹽和黑胡椒，煮至酒精揮發。",
+        "撒上香菜，即可食用。"
+      ],
+      "servings": 2,
+      "prep_time": 15,
+      "cook_time": 10,
+      "total_time": 25,
+      "image": "url_to_image.jpg",
+      "views": 1000,
+      "clicks": 500
+    },
+    {
+      "id": 7,
+      "title": "春卷",
+      "author": "陳小華",
+      "description": "香脆可口的春卷，內餡多樣，深受喜愛。",
+      "ingredients": [
+        { "name": "春卷皮", "quantity": 10, "unit": "張" },
+        { "name": "紅蘿蔔", "quantity": 150, "unit": "克" },
+        { "name": "白菜", "quantity": 150, "unit": "克" },
+        { "name": "香菇", "quantity": 100, "unit": "克" },
+        { "name": "米粉", "quantity": 50, "unit": "克" },
+        { "name": "鹽", "quantity": 5, "unit": "克" },
+        { "name": "黑胡椒", "quantity": 3, "unit": "克" }
+      ],
+      "instructions": [
+        "將紅蘿蔔、白菜和香菇切絲。",
+        "在鍋中炒熟米粉，加入鹽和黑胡椒調味。",
+        "在春卷皮上放入蔬菜和炒好的米粉，捲起成卷。",
+        "將春卷放入烤箱中烤至金黃色和酥脆。",
+        "配上甜辣醬或其他蘸醬一起享用。"
+      ],
+      "servings": 4,
+      "prep_time": 30,
+      "cook_time": 15,
+      "total_time": 45,
+      "image": "url_to_image.jpg",
+      "views": 1000,
+      "clicks": 500
+    },
+    {
+      "id": 8,
+      "title": "法式奶油蘑菇湯",
+      "author": "黃小琳",
+      "description": "濃郁的法式奶油蘑菇湯，香氣十足，口感滑順。",
+      "ingredients": [
+        { "name": "蘑菇", "quantity": 300, "unit": "克" },
+        { "name": "洋蔥", "quantity": 1, "unit": "個" },
+        { "name": "奶油", "quantity": 50, "unit": "克" },
+        { "name": "麵粉", "quantity": 30, "unit": "克" },
+        { "name": "雞湯", "quantity": 500, "unit": "毫升" },
+        { "name": "鮮奶", "quantity": 200, "unit": "毫升" },
+        { "name": "鹽", "quantity": 5, "unit": "克" },
+        { "name": "黑胡椒", "quantity": 3, "unit": "克" }
+      ],
+      "instructions": [
+        "在鍋中加熱奶油，爆香洋蔥和蘑菇。",
+        "加入麵粉，炒至金黃色。",
+        "慢慢加入雞湯，攪拌均勻。",
+        "加入鮮奶，繼續攪拌。",
+        "煮至湯變濃稠，加入鹽和黑胡椒調味。",
+        "撒上些許香菜或蔬菜絲即可享用。"
+      ],
+      "servings": 4,
+      "prep_time": 15,
+      "cook_time": 30,
+      "total_time": 45,
+      "image": "url_to_image.jpg",
+      "views": 1000,
+      "clicks": 500
+    },
+    {
+      "id": 9,
+      "title": "巧克力蛋糕",
+      "author": "陳小芳",
+      "description": "絲滑細緻的巧克力蛋糕，濃郁甜美，讓人回味無窮。",
+      "ingredients": [
+        { "name": "麵粉", "quantity": 200, "unit": "克" },
+        { "name": "砂糖", "quantity": 150, "unit": "克" },
+        { "name": "可可粉", "quantity": 50, "unit": "克" },
+        { "name": "雞蛋", "quantity": 4, "unit": "個" },
+        { "name": "牛奶", "quantity": 200, "unit": "毫升" },
+        { "name": "植物油", "quantity": 100, "unit": "毫升" },
+        { "name": "泡打粉", "quantity": 10, "unit": "克" },
+        { "name": "香草精", "quantity": 5, "unit": "毫升" }
+      ],
+      "instructions": [
+        "將麵粉、砂糖、可可粉和泡打粉混合在一起。",
+        "加入雞蛋、牛奶、植物油和香草精，攪拌均勻。",
+        "將麵糊倒入蛋糕模具中。",
+        "放入已預熱至180°C的烤箱中，烤約30-35分鐘，或直到蛋糕完全熟透。",
+        "待蛋糕冷卻後，可以加上奶油或巧克力醬裝飾。"
+      ],
+      "servings": 8,
+      "prep_time": 20,
+      "cook_time": 35,
+      "total_time": 55,
+      "image": "url_to_image.jpg",
+      "views": 1000,
+      "clicks": 500
+    },
+    {
+      "id": 10,
+      "title": "辣椒炒豬肉",
+      "author": "王小平",
+      "description": "辣椒炒豬肉，鮮嫩多汁，香辣可口。",
+      "ingredients": [
+        { "name": "豬肉", "quantity": 300, "unit": "克" },
+        { "name": "青椒", "quantity": 1, "unit": "個" },
+        { "name": "紅椒", "quantity": 1, "unit": "個" },
+        { "name": "大蒜", "quantity": 2, "unit": "瓣" },
+        { "name": "生薑", "quantity": 10, "unit": "克" },
+        { "name": "辣椒", "quantity": 2, "unit": "個" },
+        { "name": "醬油", "quantity": 30, "unit": "毫升" },
+        { "name": "糖", "quantity": 10, "unit": "克" },
+        { "name": "米酒", "quantity": 30, "unit": "毫升" }
+      ],
+      "instructions": [
+        "豬肉切絲，青椒、紅椒切絲，大蒜、生薑切末，辣椒切段。",
+        "熱鍋後倒入橄欖油，爆香大蒜和生薑。",
+        "加入豬肉炒至變色。",
+        "加入青椒、紅椒和辣椒翻炒。",
+        "加入醬油、糖和米酒調味，炒勻即可。"
+      ],
+      "servings": 2,
+      "prep_time": 15,
+      "cook_time": 10,
+      "total_time": 25,
+      "image": "url_to_image.jpg",
+      "views": 1000,
+      "clicks": 500
+    },{
+          "id": 11,
+          "title": "蔬菜沙拉",
+          "author": "王小明",
+          "description": "清新爽口的蔬菜沙拉，營養豐富。",
+          "ingredients": [
+            { "name": "生菜", "quantity": 200, "unit": "克" },
+            { "name": "番茄", "quantity": 2, "unit": "個" },
+            { "name": "黃瓜", "quantity": 1, "unit": "根" },
+            { "name": "紅洋蔥", "quantity": 1, "unit": "個" },
+            { "name": "橄欖油", "quantity": 30, "unit": "毫升" },
+            { "name": "檸檬汁", "quantity": 20, "unit": "毫升" },
+            { "name": "鹽", "quantity": 3, "unit": "克" },
+            { "name": "黑胡椒", "quantity": 2, "unit": "克" }
+          ],
+          "instructions": [
+            "將生菜、番茄、黃瓜和紅洋蔥洗淨切片。",
+            "將所有蔬菜放入大碗中。",
+            "混合橄欖油和檸檬汁，倒在蔬菜上。",
+            "加入鹽和黑胡椒，拌勻即可享用。"
+          ],
+          "servings": 2,
+          "prep_time": 10,
+          "cook_time": 0,
+          "total_time": 10,
+          "image": "url_to_image.jpg",
+          "views": 1000,
+          "clicks": 500
+        },{
+          "id": 12,
+          "title": "番茄意大利麵",
+          "author": "陳小華",
+          "description": "酸甜可口的番茄意大利麵，簡單易做。",
+          "ingredients": [
+            { "name": "義大利麵", "quantity": 200, "unit": "克" },
+            { "name": "番茄", "quantity": 3, "unit": "個" },
+            { "name": "大蒜", "quantity": 2, "unit": "瓣" },
+            { "name": "橄欖油", "quantity": 30, "unit": "毫升" },
+            { "name": "羅勒葉", "quantity": "適量", "unit": "" },
+            { "name": "鹽", "quantity": 3, "unit": "克" },
+            { "name": "黑胡椒", "quantity": 2, "unit": "克" }
+          ],
+          "instructions": [
+            "將義大利麵煮熟，撈起瀝乾備用。",
+            "番茄切碎，大蒜切末。",
+            "平底鍋加熱後倒入橄欖油，爆香大蒜。",
+            "加入切碎的番茄，煮至番茄熟爛。",
+            "加入煮熟的義大利麵，拌勻。",
+            "撒上羅勒葉，即可享用。"
+          ],
+          "servings": 2,
+          "prep_time": 10,
+          "cook_time": 15,
+          "total_time": 25,
+          "image": "url_to_image.jpg",
+          "views": 1000,
+          "clicks": 500
+        },
+        {
+          "id": 13,
+          "title": "牛肉炒西蘭花",
+          "author": "劉小亮",
+          "description": "清淡可口的牛肉炒西蘭花，簡單美味。",
+          "ingredients": [
+            { "name": "西蘭花", "quantity": 200, "unit": "克" },
+            { "name": "牛肉", "quantity": 150, "unit": "克" },
+            { "name": "大蒜", "quantity": 2, "unit": "瓣" },
+            { "name": "生薑", "quantity": 10, "unit": "克" },
+            { "name": "醬油", "quantity": 30, "unit": "毫升" },
+            { "name": "米酒", "quantity": 30, "unit": "毫升" },
+            { "name": "橄欖油", "quantity": 20, "unit": "毫升" },
+            { "name": "鹽", "quantity": 3, "unit": "克" },
+            { "name": "黑胡椒", "quantity": 2, "unit": "克" }
+          ],
+          "instructions": [
+            "牛肉切絲，西蘭花洗淨切小朵，大蒜切末，生薑切絲。",
+            "熱鍋後倒入橄欖油，爆香大蒜和生薑。",
+            "加入牛肉炒至變色。",
+            "加入西蘭花翻炒。",
+            "加入醬油和米酒調味，炒勻即可。"
+          ],
+          "servings": 2,
+          "prep_time": 10,
+          "cook_time": 10,
+          "total_time": 20,
+          "image": "url_to_image.jpg",
+          "views": 1000,
+          "clicks": 500
+        },
+        {
+          "id": 14,
+          "title": "咖哩雞塊",
+          "author": "張小敏",
+          "description": "香氣濃郁的咖哩雞塊，口感香嫩多汁。",
+          "ingredients": [
+            { "name": "雞胸肉", "quantity": 300, "unit": "克" },
+            { "name": "馬鈴薯", "quantity": 2, "unit": "個" },
+            { "name": "洋蔥", "quantity": 1, "unit": "個" },
+            { "name": "咖哩粉", "quantity": 30, "unit": "克" },
+            { "name": "椰奶", "quantity": 200, "unit": "毫升" },
+            { "name": "橄欖油", "quantity": 20, "unit": "毫升" },
+            { "name": "鹽", "quantity": 3, "unit": "克" }
+          ],
+          "instructions": [
+            "雞胸肉切塊，馬鈴薯去皮切塊，洋蔥切絲。",
+            "熱鍋後倒入橄欖油，爆香洋蔥。",
+            "加入雞肉和馬鈴薯炒至微焦。",
+            "加入咖哩粉炒香。",
+            "倒入椰奶，加入鹽調味，煮至雞肉和馬鈴薯軟熟即可。"
+          ],
+          "servings": 4,
+          "prep_time": 15,
+          "cook_time": 25,
+          "total_time": 40,
+          "image": "url_to_image.jpg",
+          "views": 1000,
+          "clicks": 500
+        },
+        {
+          "id": 15,
+          "title": "綠茶冰淇淋",
+          "author": "林小美",
+          "description": "清爽綠茶味冰淇淋，夏日必備。",
+          "ingredients": [
+            { "name": "淡奶油", "quantity": 300, "unit": "毫升" },
+            { "name": "全脂牛奶", "quantity": 200, "unit": "毫升" },
+            { "name": "糖", "quantity": 100, "unit": "克" },
+            { "name": "綠茶粉", "quantity": 30, "unit": "克" }
+          ],
+          "instructions": [
+            "將淡奶油、全脂牛奶、糖和綠茶粉放入攪拌器中攪拌均勻。",
+            "將混合物倒入冰淇淋機中，按照說明書的指示操作，攪拌至冰淇淋凝固。",
+            "將凝固的冰淇淋倒入冰淇淋盒中，放入冷凍庫中冷凍至完全凝固。",
+            "取出後即可享用。"
+          ],
+          "servings": 4,
+          "prep_time": 10,
+          "cook_time": 30,
+          "total_time": 40,
+          "image": "url_to_image.jpg",
+          "views": 1000,
+          "clicks": 500
+        },
+        {
+          "id": 16,
+          "title": "香蕉鬆餅",
+          "author": "黃小琳",
+          "description": "柔軟鬆軟的香蕉鬆餅，甜美可口。",
+          "ingredients": [
+            { "name": "麵粉", "quantity": 200, "unit": "克" },
+            { "name": "香蕉", "quantity": 2, "unit": "根" },
+            { "name": "牛奶", "quantity": 150, "unit": "毫升" },
+            { "name": "雞蛋", "quantity": 2, "unit": "個" },
+            { "name": "糖", "quantity": 50, "unit": "克" },
+            { "name": "泡打粉", "quantity": 5, "unit": "克" },
+            { "name": "植物油", "quantity": 20, "unit": "毫升" }
+          ],
+          "instructions": [
+            "將香蕉搗成泥。",
+            "將麵粉、泡打粉和糖混合在一起。",
+            "加入牛奶、雞蛋、香蕉泥和植物油，攪拌均勻。",
+            "將麵糊倒入鍋中，小火煎至兩面金黃即可。"
+          ],
+          "servings": 4,
+          "prep_time": 10,
+          "cook_time": 10,
+          "total_time": 20,
+          "image": "url_to_image.jpg",
+          "views": 1000,
+          "clicks": 500
+        },
+        {
+          "id": 17,
+          "title": "豆腐煲",
+          "author": "王小平",
+          "description": "鮮美滋補的豆腐煲，溫暖心靈。",
+          "ingredients": [
+            { "name": "豆腐", "quantity": 300, "unit": "克" },
+            { "name": "香菇", "quantity": 100, "unit": "克" },
+            { "name": "紅蘿蔔", "quantity": 1, "unit": "根" },
+            { "name": "青菜", "quantity": 200, "unit": "克" },
+            { "name": "蒜", "quantity": 2, "unit": "瓣" },
+            { "name": "醬油", "quantity": 30, "unit": "毫升" },
+            { "name": "米酒", "quantity": 30, "unit": "毫升" },
+            { "name": "鹽", "quantity": 3, "unit": "克" }
+          ],
+          "instructions": [
+            "豆腐切塊，香菇切片，紅蘿蔔切片，青菜洗净。",
+            "熱鍋後倒入橄欖油，爆香蒜末。",
+            "加入香菇、紅蘿蔔和豆腐煮開。",
+            "倒入醬油和米酒調味，加入鹽調味，煮至蔬菜軟熟即可。"
+          ],
+          "servings": 4,
+          "prep_time": 15,
+          "cook_time": 20,
+          "total_time": 35,
+          "image": "url_to_image.jpg",
+          "views": 1000,
+          "clicks": 500
+        },
+        {
+          "id": 18,
+          "title": "麻婆豆腐",
+          "author": "陳小芳",
+          "description": "香辣麻婆豆腐，風味獨特，下飯最佳。",
+          "ingredients": [
+            { "name": "豆腐", "quantity": 300, "unit": "克" },
+            { "name": "肉末", "quantity": 150, "unit": "克" },
+            { "name": "豆瓣醬", "quantity": 30, "unit": "克" },
+            { "name": "蔥", "quantity": 1, "unit": "根" },
+            { "name": "大蒜", "quantity": 2, "unit": "瓣" },
+            { "name": "醬油", "quantity": 30, "unit": "毫升" },
+            { "name": "米酒", "quantity": 30, "unit": "毫升" },
+            { "name": "花椒粉", "quantity": 5, "unit": "克" },
+            { "name": "麻油", "quantity": 10, "unit": "毫升" }
+          ],
+          "instructions": [
+            "豆腐切塊，蔥切段，大蒜切末。",
+            "熱鍋後倒入橄欖油，爆香大蒜和蔥段。",
+            "加入肉末炒至變色。",
+            "加入豆瓣醬、醬油和米酒翻炒。",
+            "加入花椒粉和麻油，炒勻。",
+            "最後加入豆腐，輕輕翻炒均勻即可。"
+          ],
+          "servings": 4,
+          "prep_time": 15,
+          "cook_time": 15,
+          "total_time": 30,
+          "image": "url_to_image.jpg",
+          "views": 1000,
+          "clicks": 500
+        },
+        {
+          "id": 19,
+          "title": "南瓜濃湯",
+          "author": "李小龍",
+          "description": "濃郁香甜的南瓜濃湯，營養豐富。",
+          "ingredients": [
+            { "name": "南瓜", "quantity": 500, "unit": "克" },
+            { "name": "洋蔥", "quantity": 1, "unit": "個" },
+            { "name": "蒜", "quantity": 2, "unit": "瓣" },
+            { "name": "奶油", "quantity": 50, "unit": "克" },
+            { "name": "雞湯", "quantity": 500, "unit": "毫升" },
+            { "name": "鹽", "quantity": 3, "unit": "克" },
+            { "name": "黑胡椒", "quantity": 2, "unit": "克" }
+          ],
+          "instructions": [
+            "南瓜去皮去籽切塊，洋蔥切片，蒜切片。",
+            "在鍋中加熱奶油，爆香洋蔥和蒜片。",
+            "加入南瓜塊炒至軟。",
+            "倒入雞湯，煮至南瓜熟透。",
+            "將湯倒入攪拌器中攪拌成濃湯狀。",
+            "加入鹽和黑胡椒調味，煮沸即可。"
+          ],
+          "servings": 4,
+          "prep_time": 15,
+          "cook_time": 25,
+          "total_time": 40,
+          "image": "url_to_image.jpg",
+          "views": 1000,
+          "clicks": 500
+        },
+        {
+          "id": 20,
+          "title": "牛肉炒意粉",
+          "author": "張小敏",
+          "description": "清淡可口的牛肉炒意粉，美味十足。",
+          "ingredients": [
+            { "name": "意大利粉", "quantity": 200, "unit": "克" },
+            { "name": "牛肉", "quantity": 200, "unit": "克" },
+            { "name": "紅椒", "quantity": 1, "unit": "個" },
+            { "name": "洋蔥", "quantity": 1, "unit": "個" },
+            { "name": "大蒜", "quantity": 2, "unit": "瓣" },
+            { "name": "番茄醬", "quantity": 30, "unit": "毫升" },
+            { "name": "橄欖油", "quantity": 20, "unit": "毫升" },
+            { "name": "鹽", "quantity": 3, "unit": "克" },
+            { "name": "黑胡椒", "quantity": 2, "unit": "克" }
+          ],
+          "instructions": [
+            "意大利粉煮熟，瀝乾水分，備用。",
+            "牛肉切絲，紅椒、洋蔥切絲，大蒜切末。",
+            "熱鍋後倒入橄欖油，爆香大蒜。",
+            "加入牛肉炒至變色。",
+            "加入紅椒、洋蔥炒至蔬菜軟化。",
+            "加入煮熟的意大利粉和番茄醬炒勻。",
+            "加入鹽和黑胡椒調味，炒勻即可。"
+          ],
+          "servings": 4,
+          "prep_time": 15,
+          "cook_time": 20,
+          "total_time": 35,
+          "image": "url_to_image.jpg",
+          "views": 1000,
+          "clicks": 500
+        }    
+      ]
+    }
