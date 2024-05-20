@@ -87,11 +87,10 @@
     <div class="container">
         <div class="row rounded" style="background-color: rgb(212, 247, 212);">
             <!-- 搜尋選單 -->
-            <div class="d-flex row mt-4" id="search">
-                <div class="col-md-1"></div>
+            <div class="d-flex mt-4 justify-between" id="search">
                 <!--篩選欄 -->
-                <div class="col-md-2 col-sm-6">
-                    <div class="border rounded">
+                <div class="mx-3 w-25">
+                    <div class="border rounded bg-light">
                         <img src="https://lkk.azureedge.net/images/recipe-icon1.png" alt=""
                             class="list_img_size rounded mx-auto d-block">
                         <p style="text-align: center;">烹飪時間</p>
@@ -118,8 +117,8 @@
                 </div>
                 <!-- 篩選欄 -->
                 <!--篩選欄 -->
-                <div class="col-md-2 col-sm-6">
-                    <div class="border rounded">
+                <div class="mx-3 w-25">
+                    <div class="border rounded bg-light">
                         <img src="https://lkk.azureedge.net/images/recipe-icon3.png" alt=""
                             class="list_img_size rounded mx-auto d-block">
                         <p style="text-align: center;">材料</p>
@@ -151,8 +150,8 @@
                 </div>
                 <!-- 篩選欄 -->
                 <!--篩選欄 -->
-                <div class="col-md-2 col-sm-6">
-                    <div class="border rounded">
+                <div class="mx-3 w-25">
+                    <div class="border rounded bg-light">
                         <img src="https://lkk.azureedge.net/images/recipe-icon4.png" alt=""
                             class="list_img_size rounded mx-auto d-block">
                         <p style="text-align: center;">餐類</p>
@@ -166,7 +165,6 @@
                                     style="overflow:scroll; max-height: 200px;">
                                     <li><button class="dropdown-item" type="button">所有</button></li>
                                     <li><button class="dropdown-item" type="button">小食</button></li>
-                                    <li><button class="dropdown-item" type="button">小食</button></li>
                                     <li><button class="dropdown-item" type="button">甜品</button></li>
                                     <li><button class="dropdown-item" type="button">晚餐</button></li>
                                     <li><button class="dropdown-item" type="button">午餐</button></li>
@@ -179,8 +177,8 @@
                 </div>
                 <!-- 篩選欄 -->
                 <!--篩選欄 -->
-                <div class="col-md-2 col-sm-6">
-                    <div class="border rounded">
+                <div class="mx-3 w-25">
+                    <div class="border rounded bg-light">
                         <img src="https://lkk.azureedge.net/images/recipe-icon5.png" alt=""
                             class="list_img_size rounded mx-auto d-block">
                         <p style="text-align: center;">膳食</p>
@@ -203,8 +201,8 @@
                 </div>
                 <!-- 篩選欄 -->
                 <!--篩選欄 -->
-                <div class="col-md-2 col-sm-6">
-                    <div class="border rounded">
+                <div class="mx-3 w-25">
+                    <div class="border rounded bg-light">
                         <img src="https://lkk.azureedge.net/images/recipe-icon6.png" alt=""
                             class="list_img_size rounded mx-auto d-block">
                         <p style="text-align: center;">菜式</p>
@@ -229,7 +227,6 @@
                     </div>
                 </div>
                 <!-- 篩選欄 -->
-                <div class="col-md-1"></div>
             </div>
             <!-- 搜尋選單 -->
             <!-- 第二個搜尋列 -->
@@ -238,13 +235,15 @@
                 <!-- search bar -->
                 <div class="mb-3 col-4">
                     <div class="input-group" id="btn_searchbar">
-                        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <button class="btn dropdown-toggle text-muted border-dark bg-light" type="button" data-bs-toggle="dropdown">
                             食譜</button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">食譜</a></li>
+                            <li><a class="dropdown-item " href="#">食譜</a></li>
                             <li><a class="dropdown-item" href="#">作者</a></li>
                         </ul>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control border-dark border-end-0">
+                        <button class="btn border-start-0 border-dark" type="button" style="background-color: white;">
+                            搜尋</button>
                     </div>
                 </div>
                 <!-- search bar -->
@@ -344,6 +343,7 @@
         $("#clear_all").on("click", function () {
             for (var i = 0; i < 5; i++) {
                 $(`#search_${i}>button`).text("所有選項")
+                $('#btn_searchbar input').val("");
             }
         })
         //初始化篩選器(也可以在清除紐上加一個a標籤live會自動初始化)
@@ -351,7 +351,7 @@
         //searbar作者、食譜抽換
         $("#btn_searchbar ul li a").on("click", function () {
             //console.log(this.text);
-            $("#btn_searchbar button").text(this.text);
+            $("#btn_searchbar button:first").text(this.text);
         })
         //searbar作者、食譜抽換
 
