@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <style>
     .img_logo_size {
@@ -75,9 +76,22 @@
         </div>
         <div class="col-10 px-5">
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="list_home" role="tabpanel" aria-labelledby="list_home_list">
-                    <img src="../學習檔案/img/統計圖表.webp" alt="">
-                    <img src="../學習檔案/img/統計圖表.webp" alt="">
+                <div class="tab-pane fade show active" id="list_home" role="tabpanel"
+                    aria-labelledby="list_home_list">
+                    <!-- 圖表 -->
+                    <div class="row">
+                    
+                    <div class="col-6 ">
+                        <h3>近五天網站流量</h3>
+                        <canvas id="myChart" ></canvas>
+                    </div>
+                    
+                    <div class="col-6">
+                        <h3>近月食譜收藏數</h3>
+                        <canvas id="myline"></canvas>
+                    </div>
+                    </div>
+                    <!-- 圖表 -->
                 </div>
                 <div class="tab-pane fade" id="list_user" role="tabpanel" aria-labelledby="list_user_list">
 
@@ -240,15 +254,55 @@
         })
         //登入modal
         $('#exampleModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget) // Button that triggered the modal
-            var recipient = button.data('whatever') // Extract info from data-* attributes
-            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var button = $(event.relatedTarget) 
+            var recipient = button.data('whatever') 
             var modal = $(this)
             modal.find('.modal-title').text('New message to ' + recipient)
             modal.find('.modal-body input').val(recipient)
         })
-
+        //長條圖
+        const ctx = $('#myChart');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['5/19', '5/20', '5/21', '5/22', '5/23'],
+                datasets: [{
+                    label: '瀏覽數',
+                    data: [12, 19, 3, 5, 2],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        //長條圖
+        //折線圖
+        const ctz = $('#myline');
+        const stackedLine = new Chart(ctz, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'], // X 軸標籤
+                datasets: [{
+                    label: '收藏數', // 數據集標籤
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)', // 填充顏色
+                    borderColor: 'rgba(75, 192, 192, 1)', // 邊框顏色
+                    data: [65, 59, 80, 81, 56, 55, 40] // 數據點
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        stacked: true
+                    }
+                }
+            }
+        });
+        //折線圖
     </script>
 </body>
 

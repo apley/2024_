@@ -19,6 +19,10 @@
     .list_img_size {
         width: 100px;
     }
+
+    .bg-img {
+        background-image:url("./R.jpg")
+    }
 </style>
 
 <body>
@@ -84,6 +88,7 @@
     </nav>
     <!-- 下層導航欄結束 -->
     <!-- 內容 -->
+    <div class="bg-img">
     <div class="container">
         <div class="row rounded" style="background-color: rgb(212, 247, 212);">
             <!-- 搜尋選單 -->
@@ -96,8 +101,9 @@
                         <p style="text-align: center;">烹飪時間</p>
                         <div class="col-md-12">
                             <div class="btn-group w-100" id="search_0">
-                                <button type="button" class="btn border-top rounded dropdown-toggle" style="border-color: white;" data-bs-toggle="dropdown"
-                                    aria-expanded="false" data-bs-display="static">
+                                <button type="button" class="btn border-top rounded dropdown-toggle"
+                                    style="border-color: white;" data-bs-toggle="dropdown" aria-expanded="false"
+                                    data-bs-display="static">
                                     所有選項
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
@@ -123,8 +129,9 @@
                         <p style="text-align: center;">材料</p>
                         <div class="col-md-12">
                             <div class="btn-group w-100" id="search_1">
-                                <button type="button" class="btn border-top rounded dropdown-toggle" style="border-color: white;" data-bs-toggle="dropdown"
-                                aria-expanded="false" data-bs-display="static">
+                                <button type="button" class="btn border-top rounded dropdown-toggle"
+                                    style="border-color: white;" data-bs-toggle="dropdown" aria-expanded="false"
+                                    data-bs-display="static">
                                     所有選項
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
@@ -150,8 +157,9 @@
                         <p style="text-align: center;">餐類</p>
                         <div class="col-md-12">
                             <div class="btn-group w-100" id="search_2">
-                                <button type="button" class="btn border-top rounded dropdown-toggle" style="border-color: white;" data-bs-toggle="dropdown"
-                                    aria-expanded="false" data-bs-display="static">
+                                <button type="button" class="btn border-top rounded dropdown-toggle"
+                                    style="border-color: white;" data-bs-toggle="dropdown" aria-expanded="false"
+                                    data-bs-display="static">
                                     所有選項
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
@@ -177,8 +185,9 @@
                         <p style="text-align: center;">膳食</p>
                         <div class="col-md-12">
                             <div class="btn-group w-100" id="search_3">
-                                <button type="button" class="btn border-top rounded dropdown-toggle" style="border-color: white;" data-bs-toggle="dropdown"
-                                    aria-expanded="false" data-bs-display="static">
+                                <button type="button" class="btn border-top rounded dropdown-toggle"
+                                    style="border-color: white;" data-bs-toggle="dropdown" aria-expanded="false"
+                                    data-bs-display="static">
                                     所有選項
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
@@ -201,8 +210,9 @@
                         <p style="text-align: center;">菜式</p>
                         <div class="col-md-12">
                             <div class="btn-group w-100" id="search_4">
-                                <button type="button" class="btn border-top rounded dropdown-toggle" style="border-color: white;" data-bs-toggle="dropdown"
-                                    aria-expanded="false" data-bs-display="static">
+                                <button type="button" class="btn border-top rounded dropdown-toggle"
+                                    style="border-color: white;" data-bs-toggle="dropdown" aria-expanded="false"
+                                    data-bs-display="static">
                                     所有選項
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100"
@@ -228,7 +238,8 @@
                 <!-- search bar -->
                 <div class="mb-3 col-4">
                     <div class="input-group" id="btn_searchbar">
-                        <button class="btn dropdown-toggle text-muted border-dark bg-light" type="button" data-bs-toggle="dropdown">
+                        <button class="btn dropdown-toggle text-muted border-dark bg-light" type="button"
+                            data-bs-toggle="dropdown">
                             食譜</button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item " href="#">食譜</a></li>
@@ -236,9 +247,11 @@
                         </ul>
                         <input type="text" class="form-control border-dark border-end-0">
                         <button class="btn border-start-0 border-dark" type="button" style="background-color: white;">
-                            搜尋</button>
+                            <img src="./reshot-icon-search-Y9FGCMS8DP.svg" alt="" style="width: 25px;"></button>
+
                     </div>
                 </div>
+
                 <!-- search bar -->
                 <div href="" class="text-decoration-none justify-content-end col-4">
                     <button style="background-color: rgba(97, 35, 6, 0.941);color: white;" class="rounded"
@@ -253,7 +266,7 @@
             <!-- 第二個搜尋列 -->
         </div>
         <!-- 搜尋結果 -->
-        <div class="container row justify-content-center" >
+        <div class="container row justify-content-center">
             <!-- 排序 -->
             <div class="btn-group mt-4 justify-content-end" style="margin-left: 90%; width: 10%;" id="btn_order">
                 <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
@@ -272,40 +285,41 @@
 
             <!-- 排序 -->
             <!-- 結果 -->
-            <div id="app1">
-            <div class="row mt-4 border col-md-12" v-for="item in items">
-                <img class="col-xl-4 col-md-12 mt-4" alt="" src="img/image_1.jfif" />
-                <div class="col-xl-8 mt-4">
-                    <div class="d-flex mt-4">
-                        <img alt="" src="./img/user.svg" />
-                        <div class="div2">作者:{{item.author}}</div>
-                    </div>
+            <div id="app1" >
+                <div class="row mt-4 border col-md-12 rounded" v-for="item in items" style="background-color: white;">
+                    <img class="col-xl-4 col-md-12 mt-4 rounded" alt="" src="./下載.jpg"/>
+                    <div class="col-xl-8 mt-4">
+                        <div class="d-flex mt-4">
+                            <img alt="" src="./img/user.svg" />
+                            <div class="div2">作者:{{item.author}}</div>
+                        </div>
 
-                    <div class="div3 mt-4">料理名稱: {{item.title}}</div>
-                    <div class="div4 mt-4">
-                        {{item.description}}
-                    </div>
-                    <div class="d-flex mt-4 justify-content-end">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#5f6368">
-                            <path
-                                d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z" />
-                        </svg>
-                        <div>{{item.views}}</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#5f6368">
-                            <path
-                                d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
-                        </svg>
-                        <div>{{item.clicks}}</div>
+                        <div class="div3 mt-4">料理名稱: {{item.title}}</div>
+                        <div class="div4 mt-4">
+                            {{item.description}}
+                        </div>
+                        <div class="d-flex mt-4 justify-content-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#5f6368">
+                                <path
+                                    d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z" />
+                            </svg>
+                            <div>{{item.views}}</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#5f6368">
+                                <path
+                                    d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
+                            </svg>
+                            <div>{{item.clicks}}</div>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <!-- 結果 -->
         </div>
         <!-- 搜尋結果end -->
     </div>
+</div>
     <footer style="background-color: green;" class="mt-4">
         <h3>關於我們</h3>
     </footer>
@@ -320,7 +334,7 @@
             var temp = this;
             console.log(this);
             $("#search").find("div>button").each(function (index) {
-                if (this == temp) { // 判斷是否是點擊的按钮
+                if (this == temp) { // 判斷是否是點擊的按鈕
                     //console.log(index);
                     // 移除之前绑定的點擊事件
                     $("#search li>button").off("click").on("click", function () {
