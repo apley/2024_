@@ -58,8 +58,8 @@
     </div>
     <!-- 上層導航欄結束 -->
 
-    <div class="row mt-4">
-        <div class="col-2">
+    <div class="row mt-4 gx-0">
+        <div class="col-2 px-5">
             <div class="list-group" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action active" id="list_home_list" data-toggle="list"
                     href="#list_home" role="tab" aria-controls="home">主頁</a>
@@ -73,7 +73,7 @@
                     href="#list-settings" role="tab" aria-controls="settings">內容管理</a>
             </div>
         </div>
-        <div class="col-10">
+        <div class="col-10 px-5">
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="list_home" role="tabpanel" aria-labelledby="list_home_list">
                     <img src="../學習檔案/img/統計圖表.webp" alt="">
@@ -114,13 +114,13 @@
                             <th>用戶id</th>
                             <th>名稱</th>
                             <th>Email</th>
-                            <th></th>
+                            <th>審核狀態</th>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>John Smith</td>
                             <td>johnsmith@gmail.com</td>
-                            <td><button>審核</button></td>
+                            <td><button>待審核</button></td>
                         </tr>
                     </table>
                 </div>
@@ -176,7 +176,7 @@
                             <td>菜頭貴</td>
                             <td>52</td>
                             <td>10</td>
-                            <td><button>審核</button></td>
+                            <td><button>待審核</button></td>
                         </tr>
                     </table>
                 </div>
@@ -188,28 +188,32 @@
                             <th>食譜名稱</th>
                             <th>作者</th>
                             <th>遭檢舉留言</th>
-                            <th></th>
+                            <th>檢舉理由</th>
+                            <th>審核狀態</th>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>番茄炒蛋</td>
                             <td>王小明</td>
-                            <td>.....</td>
-                            <td><button>審核</button></td>
+                            <td>真**難吃</td>
+                            <td>有髒話</td>
+                            <td><button>待審核</button></td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>義大利披薩</td>
                             <td>李小龍</td>
-                            <td>.....</td>
-                            <td><button>審核</button></td>
+                            <td>真難吃</td>
+                            <td>令人感到不愉快</td>
+                            <td><button>待審核</button></td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>義大利麵</td>
                             <td>菜頭貴</td>
                             <td>.....</td>
-                            <td><button>審核</button></td>
+                            <td>.....</td>
+                            <td><button disabled>已審核</button></td>
                         </tr>
                     </table>
                 </div>
@@ -228,11 +232,13 @@
 
     </footer>
     <script>
+        //切換版面
         $('#list-tab a').on('click', function (e) {
             e.preventDefault()
             //console.log(this)
             $(this).tab('show')
         })
+        //登入modal
         $('#exampleModal').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget) // Button that triggered the modal
             var recipient = button.data('whatever') // Extract info from data-* attributes
