@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="./favorite_css.css">
 </head>
 
 <style>
@@ -21,72 +22,38 @@
     }
 
     .bg-img {
-        background-image:url("./R.jpg")
+        background-image:url("./img/大理石.jpg")
     }
 </style>
 
 <body>
-    <!-- 上層導航欄 -->
-    <nav class="navbar bg-light justify-between" style="border-bottom:gray solid 1px;">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand ">
-                <img style="width: 150px; margin-left: 40px;" src="./img/logo.png" alt="">
-            </a>
-            <div class="justify-between">
-                <!-- 會員頭像 -->
-                <a href="#" class="nav_text_size" style="margin-right: 20px;text-decoration: none; color: inherit;"><img
-                        src="./img/user.svg" style="width: 40px;" alt="">會員</a>
-                <!-- 會員頭像 -->
-                <a href="#" class="nav_text_size"
-                    style="margin-right: 20px;text-decoration: none; color: inherit;">客服</a>
+       <!-- 下面是header---------------------------------------------------------------------------- -->
+       <header class="row gx-0">
+        <div class="header-left row gx-0">
+            <div class="header-left-img">
+            </div>
+            <span id="all-receipe">所有食譜</span>
+            <span id="my-receipe">我的食譜</span>
+            <span id="my-page">我的頁面</span>
+        </div>
+        <div class="header-middle row gx-0">
+            <!-- test-middle -->
+        </div>
+        <div class="header-right row gx-0">
+            <div class="loginsignbtn">
+                <div class="login">Login</div>
+                <div class="sign">Sign up</div>
+            </div>
+            <div class="spacebar">
+            </div>
+            <div class="shoppingcart">
+                會員
+            </div>
+            <div class="profile">
+                客戶
             </div>
         </div>
-    </nav>
-    <!-- 上層導航欄結束 -->
-    <!-- 下層導航欄 -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid row">
-            <!-- 響應式可折疊菜單 -->
-            <button class="navbar-toggler col-md-1 col-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbar_Nav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon">
-                </span>
-            </button>
-            <!-- 響應式可折疊菜單 -->
-            <!-- 麵包屑 -->
-            <div class="col-md-4 col-sm-8 col-8">
-                <div class="row">
-                    <div class="col-md-8">
-                        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '&rang;';">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item">首頁</li>
-                                <li class="breadcrumb-item active" aria-current="page">所有食譜</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <!-- 麵包屑 -->
-
-            <div class="collapse navbar-collapse col-md-5" id="navbar_Nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item" style="margin-right: 150px;">
-                        <a href="#" class="nav-link">我的食譜</a>
-                    </li>
-                    <li class="nav-item" style="margin-right: 150px;">
-                        <a href="#" class="nav-link">我的頁面</a>
-                    </li>
-                    <!-- 本頁 無法點選 -->
-                    <li class="nav-item" style="margin-right: 150px;">
-                        <a href="#" class="nav-link disabled">所有食譜</a>
-                    </li>
-                    <!-- 本頁 -->
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- 下層導航欄結束 -->
+    </header>
     <!-- 內容 -->
     <div class="bg-img">
     <div class="container">
@@ -94,6 +61,7 @@
             <!-- 搜尋選單 -->
             <div class="d-flex mt-4 justify-between" id="search">
                 <!--篩選欄 -->
+                <!-- 要記得改成form !!!!!!-->
                 <div class="mx-3 w-25">
                     <div class="border rounded bg-light">
                         <img src="https://lkk.azureedge.net/images/recipe-icon1.png" alt=""
@@ -138,10 +106,10 @@
                                     style="overflow:scroll; max-height: 200px;">
                                     <li><button class="dropdown-item" type="button">所有</button></li>
                                     <li><button class="dropdown-item" type="button">牛肉</button></li>
-                                    <li><button class="dropdown-item" type="button">雞</button></li>
+                                    <li><button class="dropdown-item" type="button">雞肉</button></li>
                                     <li><button class="dropdown-item" type="button">雞蛋</button></li>
-                                    <li><button class="dropdown-item" type="button">羊</button></li>
-                                    <li><button class="dropdown-item" type="button">豬</button></li>
+                                    <li><button class="dropdown-item" type="button">羊肉</button></li>
+                                    <li><button class="dropdown-item" type="button">豬肉</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -247,7 +215,7 @@
                         </ul>
                         <input type="text" class="form-control border-dark border-end-0">
                         <button class="btn border-start-0 border-dark" type="button" style="background-color: white;">
-                            <img src="./reshot-icon-search-Y9FGCMS8DP.svg" alt="" style="width: 25px;"></button>
+                            <img src="../新增資料夾/img/search.png" alt="" style="width: 25px;"></button>
 
                     </div>
                 </div>
@@ -287,7 +255,7 @@
             <!-- 結果 -->
             <div id="app1" >
                 <div class="row mt-4 border col-md-12 rounded" v-for="item in items" style="background-color: white;">
-                    <img class="col-xl-4 col-md-12 mt-4 rounded" alt="" src="./下載.jpg"/>
+                    <img class="col-xl-4 col-md-12 mt-4 rounded" alt="" src="./img/image_1.jfif"/>
                     <div class="col-xl-8 mt-4">
                         <div class="d-flex mt-4">
                             <img alt="" src="./img/user.svg" />
@@ -319,10 +287,51 @@
         </div>
         <!-- 搜尋結果end -->
     </div>
-</div>
-    <footer style="background-color: green;" class="mt-4">
-        <h3>關於我們</h3>
-    </footer>
+
+<!-- 下面是footer的---------------------------------------------------------------------------- -->
+<footer class="footer-class row gx-0 mt-3">
+    <div class="footer-header col-12 row gx-0">
+        <!-- <span>請輸入問題:</span> -->
+        <div class="footer-header-top col-4">
+            <input type="text" class="footer-header-text" placeholder="問題回報">
+            <div class="footer-header-button">傳送</div>
+        </div>
+    </div>
+    <div class="footer-link">
+        <div class="link-label">
+            首頁
+        </div>
+        <ul>
+            <li><a href="">會員登入頁</a></li>
+            <li><a href="">會員註冊頁</a></li>
+            <li><a href="">客戶服務頁</a></li>
+        </ul>
+    </div>
+    <div class="footer-link">
+        <div class="link-label">
+            頁籤
+        </div>
+        <ul>
+            <li><a href="">查詢頁</a></li>
+            <li><a href="">收藏頁</a></li>
+            <li><a href="">我的首頁</a></li>
+        </ul>
+    </div>
+    <div class="footer-link">
+        <div class="link-label">
+            頁籤
+        </div>
+        <ul>
+            <li><a href="">查詢頁</a></li>
+            <li><a href="">收藏頁</a></li>
+            <li><a href="">我的首頁</a></li>
+        </ul>
+    </div>
+    <div class="footer-logo"></div>
+    <div class="footer-footer col-12 gx-0">
+        KEEP IN TOUCH WITH OUR WEBSITE
+    </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
