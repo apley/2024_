@@ -24,6 +24,15 @@
     .bg-img {
         background-image:url("./img/大理石.jpg")
     }
+    .search_result{
+        background-color: rgb(255, 255, 255,0.5);
+        box-shadow: 10px 5px 5px gray;
+        transition: box-shadow 0.5s, transform 0.5s;
+    }
+    .search_result:hover{
+        box-shadow: 20px 10px 10px gray;
+        transform: scale(1.05);
+    }
 </style>
 
 <body>
@@ -57,7 +66,7 @@
     <!-- 內容 -->
     <div class="bg-img">
     <div class="container">
-        <div class="row rounded" style="background-color: rgb(212, 247, 212);">
+        <div class="row rounded" style="background-color: rgb(212, 247, 212);box-shadow: 10px 5px 5px gray;">
             <!-- 搜尋選單 -->
             <div class="d-flex mt-4 justify-between" id="search">
                 <!--篩選欄 -->
@@ -254,8 +263,8 @@
             <!-- 排序 -->
             <!-- 結果 -->
             <div id="app1" >
-                <div class="row mt-4 border col-md-12 rounded" v-for="item in items" style="background-color: white;">
-                    <img class="col-xl-4 col-md-12 mt-4 rounded" alt="" src="./img/image_1.jfif"/>
+                <div class="row mt-4 border col-md-12 rounded search_result" v-for="item in items">
+                    <img class="col-xl-4 col-md-12 my-4 rounded" alt="" src="./img/image_1.jfif"/>
                     <div class="col-xl-8 mt-4">
                         <div class="d-flex mt-4">
                             <img alt="" src="./img/user.svg" />
