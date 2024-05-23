@@ -22,21 +22,21 @@
 </style>
 
 <body>
-   <!-- 下面是header---------------------------------------------------------------------------- -->
-   <header class="row gx-0">
-    <div class="header-left row gx-0">
-        <div class="header-left-img">
+    <!-- 下面是header---------------------------------------------------------------------------- -->
+    <header class="row gx-0">
+        <div class="header-left row gx-0">
+            <div class="header-left-img">
+            </div>
         </div>
-    </div>
-    <div class="header-middle row gx-0">
-        <!-- test-middle -->
-    </div>
-    <div class="header-right row gx-0">
-        <div class="shoppingcart">
-            登出
+        <div class="header-middle row gx-0">
+            <!-- test-middle -->
         </div>
-    </div>
-</header>
+        <div class="header-right row gx-0">
+            <div class="shoppingcart">
+                登出
+            </div>
+        </div>
+    </header>
 
     <div class="row mt-4 gx-0">
         <div class="col-2 px-5">
@@ -55,20 +55,19 @@
         </div>
         <div class="col-10 px-5">
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="list_home" role="tabpanel"
-                    aria-labelledby="list_home_list">
+                <div class="tab-pane fade show active" id="list_home" role="tabpanel" aria-labelledby="list_home_list">
                     <!-- 圖表 -->
                     <div class="row">
-                    
-                    <div class="col-6 ">
-                        <h3>近五天網站流量</h3>
-                        <canvas id="myChart" ></canvas>
-                    </div>
-                    
-                    <div class="col-6">
-                        <h3>近月食譜收藏數</h3>
-                        <canvas id="myline"></canvas>
-                    </div>
+
+                        <div class="col-6 ">
+                            <h3>近五天網站流量</h3>
+                            <canvas id="myChart"></canvas>
+                        </div>
+
+                        <div class="col-6">
+                            <h3>近月食譜收藏數</h3>
+                            <canvas id="myline"></canvas>
+                        </div>
                     </div>
                     <!-- 圖表 -->
                     <h3>熱門食譜排名</h3>
@@ -137,51 +136,13 @@
                         </tr>
                     </table>
                     <h3>檢舉審核</h3>
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="user_review">
                         <tr class="table-active">
                             <th>用戶id</th>
                             <th>名稱</th>
                             <th>Email</th>
                             <th>被檢舉原因</th>
                             <th>審核狀態</th>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>John Smith</td>
-                            <td>johnsmith@gmail.com</td>
-                            <td>自介亂寫</td>
-                            <td>
-                                <!-- modal的彈出按鈕 -->
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn_censor" id="censor">
-                                    待審核
-                                </button>
-                                <!-- modal的彈出按鈕 -->
-                                <!-- modal的本體 -->
-                                <div class="modal fade" id="btn_censor" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <div class="modal-title">
-                                                    審核欄
-                                                </div>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>被檢舉人: John Smith</p>
-                                                <p>被檢舉原因: 自介亂寫</p>
-                                                <label for="">檢舉圖片:</label>
-                                                <img src="../新增資料夾/img/螢幕擷取畫面 2024-05-21 212334.png" alt="">
-                                                <p>檢舉人: John Doe</p>
-                                                <p>遭檢舉頁:<a href="#">John Smith的食譜頁</a></p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-primary">通過</button>
-                                                <button class="btn btn-primary">駁回</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- modal的本體 -->
-                            </td>
                         </tr>
                     </table>
                 </div>
@@ -240,32 +201,6 @@
                                 <button class="btn btn-primary">
                                     待審核
                                 </button>
-                                <!-- modal的彈出按鈕 -->
-                                <!-- modal的本體 -->
-                                <!-- <div class="modal fade" id="btn_censor" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <div class="modal-title">
-                                                    審核欄
-                                                </div>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>被檢舉人: John Smith</p>
-                                                <p>被檢舉原因: 自介亂寫</p>
-                                                <label for="">檢舉圖片:</label>
-                                                <img src="../新增資料夾/img/螢幕擷取畫面 2024-05-21 212334.png" alt="">
-                                                <p>檢舉人: John Doe</p>
-                                                <p>遭檢舉頁:<a href="#">John Smith的食譜頁</a></p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-primary">通過</button>
-                                                <button class="btn btn-primary">駁回</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- modal的本體 -->
                             </td>
                         </tr>
                     </table>
@@ -330,8 +265,8 @@
         })
         //登入modal
         $('#exampleModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget) 
-            var recipient = button.data('whatever') 
+            var button = $(event.relatedTarget)
+            var recipient = button.data('whatever')
             var modal = $(this)
             modal.find('.modal-title').text('New message to ' + recipient)
             modal.find('.modal-body input').val(recipient)
@@ -380,11 +315,60 @@
         });
         //折線圖
         //審核欄
-        $("#btn_censor button").on("click",function(){
+        //插入被檢舉的欄位
+        var id = 3;
+        $("#user_review").append(`<tr>
+                            <td>${3}</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>自介亂寫</td>
+                            <td id="user_review_0">
+                                <!-- modal的彈出按鈕 -->
+                                <button class="btn btn-primary btn_modal" data-bs-toggle="modal" data-bs-target="#modal${id}"
+                                    id="censor">
+                                    待審核
+                                </button>
+                                <!-- modal的彈出按鈕 -->
+                                <!-- modal的本體 -->
+                                <div class="modal fade btn_modalBody" id="modal${id}" tabindex="-1" aria-labelledby="modal-title"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <div class="modal-title">
+                                                    審核欄
+                                                </div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>被檢舉人: John Smith</p>
+                                                <p>被檢舉原因: 自介亂寫</p>
+                                                <label for="">檢舉圖片:</label>
+                                                <img src="../新增資料夾/img/螢幕擷取畫面 2024-05-21 212334.png" alt="">
+                                                <p>檢舉人: John Doe</p>
+                                                <p>遭檢舉頁:<a href="#">John Smith的食譜頁</a></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-primary" data-bs-dismiss="modal">通過</button>
+                                                <button class="btn btn-primary" data-bs-dismiss="modal">駁回</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal的本體 -->
+                            </td>
+                        </tr>`)
+        //插入被檢舉的欄位
+        //更改審核按鈕
+        var temp;
+        $('.btn_modal').on('click', function () {
             console.log(this.innerText)
-            if(this!=null){
-                $("#censor").attr("disabled",true)
-                $("#censor").text("已審核")
+            temp = this
+        })
+        $(".btn_modalBody button").on("click", function () {
+            console.log(this.innerText)
+            if (this != null) {
+                $(temp).attr("disabled", true)
+                $(temp).text("已審核")
             }
         })
         //審核欄
