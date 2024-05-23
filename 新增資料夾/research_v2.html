@@ -61,52 +61,52 @@
                 <!-- 篩選欄2 -->
                 <div class="myselect">
                     <img src="./img/vegetable.png" alt="食材">
-                    <label for="time">食材</label>
-                    <select name="所有選項" id="time">
-                        <option value="">所有選項</option>
-                        <option value="">雞肉</option>
-                        <option value="">豬肉</option>
-                        <option value="">牛肉</option>
-                        <option value="">羊肉</option>
-                        <option value="">海鮮</option>
+                    <label for="food">食材</label>
+                    <select name="food" id="food">
+                        <option value="all">所有選項</option>
+                        <option value="chicken">雞肉</option>
+                        <option value="pork">豬肉</option>
+                        <option value="beef">牛肉</option>
+                        <option value="mutton">羊肉</option>
+                        <option value="seafood">海鮮</option>
                     </select>
                 </div>
                 <!-- 篩選欄2 -->
                 <!-- 篩選欄3 -->
                 <div class="myselect">
                     <img src="./img/cooking.png" alt="餐類">
-                    <label for="time">餐類</label>
-                    <select name="所有選項" id="time">
-                        <option value="">所有選項</option>
-                        <option value="">早餐</option>
-                        <option value="">午晚餐</option>
-                        <option value="">甜品</option>
-                        <option value="">小食</option>
+                    <label for="meat">餐類</label>
+                    <select name="meat" id="meat">
+                        <option value="all">所有選項</option>
+                        <option value="breakfast">早餐</option>
+                        <option value="dinner">午晚餐</option>
+                        <option value="dessert">甜品</option>
+                        <option value="snacks">小食</option>
                     </select>
                 </div>
                 <!-- 篩選欄3 -->
                 <!-- 篩選欄4 -->
                 <div class="myselect">
                     <img src="./img/eco-food.png" alt="膳食">
-                    <label for="time">膳食</label>
-                    <select name="所有選項" id="time">
-                        <option value="">所有選項</option>
-                        <option value="">健康食譜</option>
-                        <option value="">素食食譜</option>
+                    <label for="vegetable">膳食</label>
+                    <select name="vegetable" id="vegetable">
+                        <option value="all">所有選項</option>
+                        <option value="health">健康食譜</option>
+                        <option value="vegan">素食食譜</option>
                     </select>
                 </div>
                 <!-- 篩選欄4 -->
                 <!-- 篩選欄5 -->
                 <div class="myselect">
                     <img src="./img/food-tray.png" alt="菜式">
-                    <label for="time">菜式</label>
-                    <select name="所有選項" id="time">
-                        <option value="">所有選項</option>
-                        <option value="">中式食譜</option>
-                        <option value="">日式食譜</option>
-                        <option value="">韓式食譜</option>
-                        <option value="">西式食譜</option>
-                        <option value="">其他</option>
+                    <label for="type">菜式</label>
+                    <select name="type" id="type">
+                        <option value="all">所有選項</option>
+                        <option value="chinese">中式食譜</option>
+                        <option value="japan">日式食譜</option>
+                        <option value="korea">韓式食譜</option>
+                        <option value="western">西式食譜</option>
+                        <option value="other">其他</option>
                     </select>
                 </div>
                 <!-- 篩選欄5 -->
@@ -118,12 +118,12 @@
                 <!-- search_bar -->
                 <div class="mb-3 col-4 search_bar">
                     <div class="input-group">
-                        <select>
-                            <option>食譜</option>
-                            <option>作者</option>
+                        <select name="search_type">
+                            <option value="recipes">食譜</option>
+                            <option value="author">作者</option>
                         </select>
-                        <input type="text" class="form-control border-dark border-end-0">
-                        <button class="btn border-start-0 border-dark" type="button" style="background-color: white;">
+                        <input type="text" name="search" class="form-control border-dark border-end-0">
+                        <button class="btn border-start-0 border-dark" type="submit" style="background-color: white;">
                             <img src="../新增資料夾/img/search.png" alt="" style="width: 25px;"></button>
                     </div>
                 </div>
