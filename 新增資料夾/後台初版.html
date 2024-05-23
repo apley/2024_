@@ -33,7 +33,7 @@
         </div>
         <div class="header-right row gx-0">
             <div class="shoppingcart">
-                登出
+                <a href="./login.html" style="text-decoration:none; color: black;">登出</a>
             </div>
         </div>
     </header>
@@ -109,30 +109,12 @@
                 <div class="tab-pane fade" id="list_user" role="tabpanel" aria-labelledby="list_user_list">
 
                     <h3>用戶列表</h3>
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="user">
                         <tr class="table-active">
                             <th>用戶id</th>
                             <th>名稱</th>
                             <th>Email</th>
                             <th>帳號狀態</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>John Doe</td>
-                            <td>johndoe@gmail.com</td>
-                            <td>正常</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Jane Doe</td>
-                            <td>janedoe@gmail.com</td>
-                            <td>正常</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>John Smith</td>
-                            <td>johnsmith@gmail.com</td>
-                            <td>遭檢舉</td>
                         </tr>
                     </table>
                     <h3>檢舉審核</h3>
@@ -148,7 +130,7 @@
                 </div>
                 <div class="tab-pane fade" id="list-recipes" role="tabpanel" aria-labelledby="list-recipes-list">
                     <h3>食譜列表</h3>
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="recipes">
                         <tr class="table-active">
                             <th>食譜id</th>
                             <th>食譜名稱</th>
@@ -157,33 +139,10 @@
                             <th>留言數</th>
                             <th>狀態</th>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>番茄炒蛋</td>
-                            <td>王小明</td>
-                            <td>100</td>
-                            <td>3</td>
-                            <td>正常</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>義大利披薩</td>
-                            <td>李小龍</td>
-                            <td>99</td>
-                            <td>5</td>
-                            <td>正常</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>義大利麵</td>
-                            <td>菜頭貴</td>
-                            <td>52</td>
-                            <td>10</td>
-                            <td>遭檢舉</td>
-                        </tr>
+                        
                     </table>
                     <h3>食譜檢舉審核</h3>
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="recipes_reports">
                         <tr class="table-active">
                             <th>食譜id</th>
                             <th>食譜名稱</th>
@@ -191,23 +150,11 @@
                             <th>被檢舉原因</th>
                             <th>狀態</th>
                         </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>義大利麵</td>
-                            <td>菜頭貴</td>
-                            <td>抄襲食譜</td>
-                            <td>
-                                <!-- modal的彈出按鈕 -->
-                                <button class="btn btn-primary">
-                                    待審核
-                                </button>
-                            </td>
-                        </tr>
                     </table>
                 </div>
                 <div class="tab-pane fade" id="list-comments" role="tabpanel" aria-labelledby="list-comments-list">
                     <h3>評論審核列表</h3>
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="comments">
                         <tr class="table-active">
                             <th>食譜id</th>
                             <th>食譜名稱</th>
@@ -216,30 +163,7 @@
                             <th>檢舉理由</th>
                             <th>審核狀態</th>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>番茄炒蛋</td>
-                            <td>王小明</td>
-                            <td>真**難吃</td>
-                            <td>有髒話</td>
-                            <td><button class="btn btn-primary">待審核</button></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>義大利披薩</td>
-                            <td>李小龍</td>
-                            <td>真難吃</td>
-                            <td>令人感到不愉快</td>
-                            <td><button class="btn btn-primary">待審核</button></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>義大利麵</td>
-                            <td>菜頭貴</td>
-                            <td>.....</td>
-                            <td>.....</td>
-                            <td><button class="btn btn-primary" disabled>已審核</button></td>
-                        </tr>
+
                     </table>
                 </div>
                 <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
@@ -254,8 +178,8 @@
 
 
     <footer>
-
     </footer>
+    <script src="./js/insertData.js"></script>
     <script>
         //切換版面
         $('#list-tab a').on('click', function (e) {
@@ -314,65 +238,9 @@
             }
         });
         //折線圖
-        //審核欄
-        //插入被檢舉的欄位
-        var id = 3;
-        $("#user_review").append(`<tr>
-                            <td>${3}</td>
-                            <td>John Smith</td>
-                            <td>johnsmith@gmail.com</td>
-                            <td>自介亂寫</td>
-                            <td id="user_review_0">
-                                <!-- modal的彈出按鈕 -->
-                                <button class="btn btn-primary btn_modal" data-bs-toggle="modal" data-bs-target="#modal${id}"
-                                    id="censor">
-                                    待審核
-                                </button>
-                                <!-- modal的彈出按鈕 -->
-                                <!-- modal的本體 -->
-                                <div class="modal fade btn_modalBody" id="modal${id}" tabindex="-1" aria-labelledby="modal-title"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <div class="modal-title">
-                                                    審核欄
-                                                </div>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>被檢舉人: John Smith</p>
-                                                <p>被檢舉原因: 自介亂寫</p>
-                                                <label for="">檢舉圖片:</label>
-                                                <img src="../新增資料夾/img/螢幕擷取畫面 2024-05-21 212334.png" alt="">
-                                                <p>檢舉人: John Doe</p>
-                                                <p>遭檢舉頁:<a href="#">John Smith的食譜頁</a></p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-primary" data-bs-dismiss="modal">通過</button>
-                                                <button class="btn btn-primary" data-bs-dismiss="modal">駁回</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- modal的本體 -->
-                            </td>
-                        </tr>`)
-        //插入被檢舉的欄位
-        //更改審核按鈕
-        var temp;
-        $('.btn_modal').on('click', function () {
-            console.log(this.innerText)
-            temp = this
-        })
-        $(".btn_modalBody button").on("click", function () {
-            console.log(this.innerText)
-            if (this != null) {
-                $(temp).attr("disabled", true)
-                $(temp).text("已審核")
-            }
-        })
-        //審核欄
+        
     </script>
+    <script src="./js/btnchange.js"></script>
 </body>
 
 </html>
