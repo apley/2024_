@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+body {
+    background-image: url("/新增資料夾/img/大理石.jpg");
+
+    .container {
+
+        form {
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: rgb(150, 230, 191);
+            box-shadow: 10px 5px 5px gray;
+
+            .filter {
+                display: flex;
+                //background-color: aqua;
+                //border: 1px solid black;
+                border-radius: 20px;
+
+                .myselect {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    border: 1px solid gray;
+                    border-radius: 10px;
+                    background-color: white;
+                    width: 20%;
+                    margin: 10px;
+
+                    img {
+                        margin-top: 20px;
+                        width: 75px;
+                    }
+
+                    label {
+                        margin-bottom: 20px;
+                        font-size: 1.2rem;
+                    }
+
+                    select {
+                        width: 100%;
+                        border: none;
+                        border-top: 1px solid gray;
+                        text-align: center;
+                        height: 60px;
+                        font-size: 20px;
+
+                        //更改箭頭樣式
+                        /* Safari and Chrome */
+                        -webkit-appearance: none;
+                        /* Firefox */
+                        -moz-appearance: none;
+                        /* Standard */
+                        appearance: none;
+                        /* 自定義箭頭圖像 */
+                        background: url('../img/down-arrow.png') no-repeat;
+                        //更改箭頭位置
+                        background-position: right 1.8rem center;
+                        /* 根據箭頭圖像的大小調整填充 */
+                        background-size: 25px;
+                    }
+
+
+
+                }
+            }
+
+            .fliter_2 {
+                display: flex;
+                justify-content: center;
+
+                .search_bar {
+                    margin-left: 30%;
+
+                    .input-group {
+                        select {
+                            border-radius: 10px;
+                            border: 1px solid black;
+                        }
+
+                    }
+                }
+
+                .clean {
+                    border-radius: 10px;
+                    margin-left: 25%;
+                    font-size: 15px;
+                    height: 40px;
+
+                }
+            }
+
+        }
+
+        .search_result {
+            display: flex;
+            border-radius: 20px;
+            margin-top: 30px;
+            position: relative;
+            //看起來好像浮起來的效果
+            background-color: rgb(255, 255, 255, 0.5);
+            box-shadow: 10px 5px 5px gray;
+            transition: box-shadow 0.5s, transform 0.5s;
+
+            &:hover {
+                box-shadow: 20px 10px 10px gray;
+                transform: scale(1.05);
+            }
+
+            img.recipes_img {
+                border-radius: 20px;
+                height: 25vh;
+            }
+
+            .recipes_detail {
+                margin-left: 30px;
+                padding-right: 20px;
+
+
+                .recipes_title {
+                    font-size: 20px;
+                    margin-top: 15px;
+                }
+
+                .recipes_author {
+                    display: flex;
+                }
+
+                .recipes_description {
+                    font-size: 15px;
+                    margin-top: 15px;
+                }
+
+                .recipes_views {
+                    display: flex;
+                    position: absolute;
+                    bottom: 10px;
+                    right: 20px;
+
+                }
+            }
+        }
+    }
+}
