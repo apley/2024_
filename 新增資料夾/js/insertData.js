@@ -160,7 +160,7 @@ $.get('./json.json', function (e) {
                                         <label for="">檢舉圖片:</label>
                                         <img src="../新增資料夾/img/螢幕擷取畫面 2024-05-21 212334.png" alt="">
                                         <p>檢舉人: ${e.reportedByUserId}</p>
-                                        <p>遭檢舉頁:<a href="#">${e.張三}的食譜頁</a></p>
+                                        <p>遭檢舉頁:<a href="#">${e.author}的食譜頁</a></p>
                                     </div>
                                     <div class="modal-footer">
                                         <button class="btn btn-primary" data-bs-dismiss="modal">通過</button>
