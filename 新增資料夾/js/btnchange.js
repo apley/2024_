@@ -8,8 +8,15 @@
         $(".btn_modalBody button").on("click", function () {
             console.log(this.innerText)
             if (this != null) {
-                $(temp).attr("disabled", true)
-                $(temp).text("已審核")
+                //$(temp).attr("disabled", true)
+                $(temp).text(this.innerText)
+                if(this.innerText=='通過'){
+                    $(temp).removeClass('btn-warning')
+                    $(temp).addClass('btn-success')
+                }else{
+                    $(temp).removeClass('btn-success')
+                    $(temp).addClass('btn-warning')
+                }
             }
         })
         //審核欄

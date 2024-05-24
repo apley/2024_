@@ -180,6 +180,7 @@
     <footer>
     </footer>
     <script src="./js/insertData.js"></script>
+    <!-- <script src="./js/btnchange.js"></script> -->
     <script>
         //切換版面
         $('#list-tab a').on('click', function (e) {
@@ -187,7 +188,7 @@
             //console.log(this)
             $(this).tab('show')
         })
-        //登入modal
+        //modal
         $('#exampleModal').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget)
             var recipient = button.data('whatever')
@@ -240,7 +241,7 @@
         //折線圖
         
     </script>
-    <script src="./js/btnchange.js"></script>
+    
 </body>
 
 </html>
